@@ -1,0 +1,38 @@
+@import 'mixins';
+
+.course {
+  &-item {
+    margin: 50px 0;
+  }
+
+  &-title {
+    margin: 0;
+  }
+
+  &-caption {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-info {
+    display: flex;
+  }
+
+  &-info-text {
+    margin: 0;
+  }
+
+  &-description {
+    margin: 0;
+  }
+
+  &-buttons {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+  }
+
+  &-button {
+    width: 120px;
+  }
+}
