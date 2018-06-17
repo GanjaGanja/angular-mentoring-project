@@ -1,0 +1,7 @@
+$red-color: #f00;
+
+.test {
+  &-title {
+    color: $red-color;
+  }
+}

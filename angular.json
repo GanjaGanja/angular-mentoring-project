@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "angular-mentoring-project"
+  "defaultProject": "angular-mentoring-project",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
