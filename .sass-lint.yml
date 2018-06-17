@@ -5,6 +5,7 @@ files:
   ignore:
     - 'node_modules'
     - 'e2e'
+    - 'dist'
 rules:
   # Extends
   extends-before-mixins: 1
