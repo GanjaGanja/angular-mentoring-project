@@ -24,6 +24,7 @@
             ],
             "styles": [
               "node_modules/normalize-css/normalize.css",
+              "node_modules/bootstrap-4-grid/css/grid.css",
               "src/assets/styles/styles.scss"
             ],
             "stylePreprocessorOptions": {
