@@ -20,6 +20,10 @@
 
   &-info-text {
     margin: 0;
+
+    + .course-info-text {
+      margin-left: 10px;
+    }
   }
 
   &-description {

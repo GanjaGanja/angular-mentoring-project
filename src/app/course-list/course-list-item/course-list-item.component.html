@@ -2,15 +2,13 @@
     <div class="row">
         <div class="col-9">
             <div class="course-caption">
-                <h3 class="course-title">Course Title</h3>
+                <h3 class="course-title">{{courseItem.title}}</h3>
                 <div class="course-info">
-                    <p class="course-info-text">60 min</p>
-                    <p class="course-info-text">05.05.2018</p>
+                    <p class="course-info-text">{{courseItem.duration}}</p>
+                    <p class="course-info-text">{{courseItem.creationDate}}</p>
                 </div>
             </div>
-            <p class="course-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada, odio in ullamcorper congue, metus justo
-                dictum velit, nec sollicitudin mauris urna eget purus. Phasellus nulla sem, placerat venenatis scelerisque
-                eget, scelerisque pellentesque ex. Fusce molestie sed lectus in ultrices.</p>
+            <p class="course-description">{{courseItem.description}}</p>
         </div>
         <div class="col-3">
             <div class="course-buttons">
