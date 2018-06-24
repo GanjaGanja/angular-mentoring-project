@@ -12,11 +12,17 @@
         </div>
         <div class="col-3">
             <div class="course-buttons">
-                <button class="course-button" type="button">Edit</button>
                 <button
                     class="course-button"
                     type="button"
-                    (click)="handleDelete()">Delete</button>
+                    mat-button
+                    color="primary">Edit</button>
+                <button
+                    class="course-button"
+                    type="button"
+                    (click)="handleDelete()"
+                    mat-button
+                    color="warn">Delete</button>
             </div>
         </div>
     </div>
