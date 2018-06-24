@@ -3,8 +3,15 @@
         <div class="row">
             <div class="col-9">
                 <form class="toolbox-search">
-                    <input class="toolbox-input" type="search">
-                    <button class="toolbox-button" type="submit">Search</button>
+                    <input
+                        class="toolbox-input"
+                        type="search"
+                        [(ngModel)]="toolboxInput"
+                        [ngModelOptions]="{standalone: true}">
+                    <button
+                        class="toolbox-button"
+                        type="submit"
+                        (click)="logValue(toolboxInput)">Search</button>
                 </form>
             </div>
             <div class="col-3">

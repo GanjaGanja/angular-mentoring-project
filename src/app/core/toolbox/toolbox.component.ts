@@ -12,4 +12,7 @@ export class ToolboxComponent implements OnInit {
   ngOnInit() {
   }
 
+  public logValue(value: string): void {
+    console.log(value);
+  }
 }
