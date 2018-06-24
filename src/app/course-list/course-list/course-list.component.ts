@@ -10,10 +10,13 @@ import { CourseListItemService } from '../course-list-item.service';
 export class CourseListComponent implements OnInit {
   public courseListItems: CourseListItem[] = [];
 
-  constructor(private courseListService: CourseListItemService) { }
+  constructor(private courseListService: CourseListItemService) {
+    console.log('CourseListItemService DI created');
+  }
 
   ngOnInit() {
     this.courseListItems = this.courseListService.getCourseItems();
+    console.log('courseListItems populated');
   }
 
   public logItemId(id: number): void {

@@ -15,7 +15,7 @@ export class CourseListItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  public handleDelete(courseItemId: number) {
-    this.deleteItem.emit(courseItemId);
+  public handleDelete(): void {
+    this.deleteItem.emit(this.courseItem.id);
   }
 }
