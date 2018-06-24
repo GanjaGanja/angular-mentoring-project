@@ -13,7 +13,10 @@
         <div class="col-3">
             <div class="course-buttons">
                 <button class="course-button" type="button">Edit</button>
-                <button class="course-button" type="button">Delete</button>
+                <button
+                    class="course-button"
+                    type="button"
+                    (click)="handleDelete(courseItem.id)">Delete</button>
             </div>
         </div>
     </div>
