@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { ToolboxComponent } from './toolbox/toolbox.component';
+import { LoadMoreComponent } from './load-more/load-more.component';
 
 @NgModule({
   imports: [
@@ -15,13 +16,15 @@ import { ToolboxComponent } from './toolbox/toolbox.component';
     HeaderComponent,
     FooterComponent,
     BreadcrumbsComponent,
-    ToolboxComponent
+    ToolboxComponent,
+    LoadMoreComponent
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     BreadcrumbsComponent,
-    ToolboxComponent
+    ToolboxComponent,
+    LoadMoreComponent
   ]
 })
 export class CoreModule { }
