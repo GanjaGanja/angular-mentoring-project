@@ -82,6 +82,11 @@
             "styles": [
               "src/styles.css"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/styles/mixins"
+              ]
+            },
             "scripts": [],
             "assets": [
               "src/favicon.ico",
