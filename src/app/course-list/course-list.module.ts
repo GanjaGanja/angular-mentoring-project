@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MaterialModule } from './../shared/material/material.module';
-
-import { HighlightBorderDirective } from './../shared/directives/highlight-border/highlight-border.directive';
+import { CoreModule } from './../core/core.module';
 
 import { CourseListComponent } from './course-list/course-list.component';
 import { CourseListItemComponent } from './course-list-item/course-list-item.component';
@@ -11,10 +10,10 @@ import { CourseListItemComponent } from './course-list-item/course-list-item.com
 @NgModule({
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    CoreModule
   ],
   declarations: [
-    HighlightBorderDirective,
     CourseListComponent,
     CourseListItemComponent
   ],

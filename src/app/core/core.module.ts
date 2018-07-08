@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { MaterialModule } from './../shared/material/material.module';
 
+import { HighlightBorderDirective } from './../shared/directives/highlight-border/highlight-border.directive';
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
@@ -17,6 +19,7 @@ import { LoadMoreComponent } from './load-more/load-more.component';
     MaterialModule
   ],
   declarations: [
+    HighlightBorderDirective,
     HeaderComponent,
     FooterComponent,
     BreadcrumbsComponent,
@@ -24,6 +27,7 @@ import { LoadMoreComponent } from './load-more/load-more.component';
     LoadMoreComponent
   ],
   exports: [
+    HighlightBorderDirective,
     HeaderComponent,
     FooterComponent,
     BreadcrumbsComponent,
