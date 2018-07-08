@@ -10,10 +10,10 @@
                     <h3
                         class="course-title"
                         [class.course-title--top-rated]="courseItem.topRated"
-                    >{{courseItem.title}}</h3>
+                    >{{courseItem.title | uppercase}}</h3>
                     <div class="course-info">
                         <p class="course-info-text">{{courseItem.duration}}</p>
-                        <p class="course-info-text">{{courseItem.creationDate}}</p>
+                        <p class="course-info-text">{{courseItem.creationDate | date: 'MM/dd/yyyy'}}</p>
                     </div>
                 </div>
                 <p class="course-description">{{courseItem.description}}</p>
