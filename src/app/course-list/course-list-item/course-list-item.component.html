@@ -1,9 +1,17 @@
-<div class="course-item" appHighlightBorder highlightColor="yellow">
+<div
+    class="course-item"
+    [class.course-item--top-rated]="courseItem.topRated"
+    appHighlightBorder
+    highlightColor="yellow"
+>
     <div class="container-fluid">
         <div class="row">
             <div class="col-9">
                 <div class="course-caption">
-                    <h3 class="course-title">{{courseItem.title}}</h3>
+                    <h3
+                        class="course-title"
+                        [class.course-title--top-rated]="courseItem.topRated"
+                    >{{courseItem.title}}</h3>
                     <div class="course-info">
                         <p class="course-info-text">{{courseItem.duration}}</p>
                         <p class="course-info-text">{{courseItem.creationDate}}</p>

@@ -3,10 +3,22 @@
 .course {
   &-item {
     margin: 50px 0;
+
+    &--top-rated {
+      background-color: $app-amber-primary;
+    }
   }
 
   &-title {
     margin: 0;
+
+    &--top-rated {
+      &::after {
+        display: inline-block;
+        margin-left: 1em;
+        content: '*';
+      }
+    }
   }
 
   &-caption {

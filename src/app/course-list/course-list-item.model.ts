@@ -3,5 +3,6 @@ export interface CourseListItem {
   title: string;
   creationDate: string;
   duration: number;
+  topRated: boolean;
   description: string;
 }
