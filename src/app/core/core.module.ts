@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { ToolboxComponent } from './toolbox/toolbox.component';
 import { LoadMoreComponent } from './load-more/load-more.component';
+import { NoDataComponent } from './no-data/no-data.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { LoadMoreComponent } from './load-more/load-more.component';
     FooterComponent,
     BreadcrumbsComponent,
     ToolboxComponent,
-    LoadMoreComponent
+    LoadMoreComponent,
+    NoDataComponent
   ],
   exports: [
     HighlightBorderDirective,
@@ -32,7 +34,8 @@ import { LoadMoreComponent } from './load-more/load-more.component';
     FooterComponent,
     BreadcrumbsComponent,
     ToolboxComponent,
-    LoadMoreComponent
+    LoadMoreComponent,
+    NoDataComponent
   ]
 })
 export class CoreModule { }

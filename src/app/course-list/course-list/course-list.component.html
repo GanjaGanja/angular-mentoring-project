@@ -3,3 +3,7 @@
     [courseItem]="item"
     (deleteItem)="logItemId($event)"
 ></app-course-list-item>
+
+<div *ngIf="courseListItems.length === 0">
+    <app-no-data></app-no-data>
+</div>
