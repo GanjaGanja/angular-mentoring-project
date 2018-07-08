@@ -1,28 +1,30 @@
 <div class="course-item">
-    <div class="row">
-        <div class="col-9">
-            <div class="course-caption">
-                <h3 class="course-title">{{courseItem.title}}</h3>
-                <div class="course-info">
-                    <p class="course-info-text">{{courseItem.duration}}</p>
-                    <p class="course-info-text">{{courseItem.creationDate}}</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9">
+                <div class="course-caption">
+                    <h3 class="course-title">{{courseItem.title}}</h3>
+                    <div class="course-info">
+                        <p class="course-info-text">{{courseItem.duration}}</p>
+                        <p class="course-info-text">{{courseItem.creationDate}}</p>
+                    </div>
                 </div>
+                <p class="course-description">{{courseItem.description}}</p>
             </div>
-            <p class="course-description">{{courseItem.description}}</p>
-        </div>
-        <div class="col-3">
-            <div class="course-buttons">
-                <button
-                    class="course-button"
-                    type="button"
-                    mat-button
-                    color="primary">Edit</button>
-                <button
-                    class="course-button"
-                    type="button"
-                    (click)="handleDelete()"
-                    mat-button
-                    color="warn">Delete</button>
+            <div class="col-3">
+                <div class="course-buttons">
+                    <button
+                        class="course-button"
+                        type="button"
+                        mat-button
+                        color="primary">Edit</button>
+                    <button
+                        class="course-button"
+                        type="button"
+                        (click)="handleDelete()"
+                        mat-button
+                        color="warn">Delete</button>
+                </div>
             </div>
         </div>
     </div>
