@@ -4,16 +4,16 @@ import { Directive, ElementRef, Renderer2, Input, AfterViewInit } from '@angular
   selector: '[appHighlightBorder]'
 })
 export class HighlightBorderDirective implements AfterViewInit {
-  @Input() highlightColor: string;
+  @Input('appHighlightBorder') appHighlightBorder: string;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
   }
 
   public ngAfterViewInit(): void {
-    this.addHighlightColor(this.highlightColor);
+    this.addBorderColor(this.appHighlightBorder);
   }
 
-  private addHighlightColor(color: string): void {
+  private addBorderColor(color: string): void {
     this.renderer.setStyle(this.el.nativeElement, 'border', `1px solid ${color}`);
   }
 }
