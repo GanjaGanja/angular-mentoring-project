@@ -1,0 +1,33 @@
+@import 'mixins';
+
+.login {
+  &-wrapper {
+    margin: 200px 0;
+    border: 1px solid $app-grey;
+  }
+
+  &-title {
+    margin: 0;
+    padding: 7px 10px;
+    background-color: $app-grey;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  &-field {
+    // margin-bottom: 10px;
+  }
+
+  &-input {
+    // height: 36px;
+  }
+
+  &-button {
+    width: 120px;
+  }
+}
