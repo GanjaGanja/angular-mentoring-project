@@ -5,7 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './../shared/material/material.module';
 
-import { HighlightBorderDirective } from './../shared/directives/highlight-border/highlight-border.directive';
+import { AuthService } from '../shared/services/auth/auth.service';
+import { HighlightBorderDirective } from '../shared/directives/highlight-border/highlight-border.directive';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -22,6 +23,7 @@ import { NoDataComponent } from './no-data/no-data.component';
     MaterialModule
   ],
   declarations: [
+    AuthService,
     HighlightBorderDirective,
     HeaderComponent,
     FooterComponent,
@@ -32,6 +34,7 @@ import { NoDataComponent } from './no-data/no-data.component';
   ],
   exports: [
     MaterialModule,
+    AuthService,
     HighlightBorderDirective,
     HeaderComponent,
     FooterComponent,

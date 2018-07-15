@@ -48,4 +48,24 @@ export class CourseListItemService {
       }
     ];
   }
+
+  public getList(): void {
+    console.log('getList() called');
+  }
+
+  public createCourse(): void {
+    console.log('createCourse() called');
+  }
+
+  public getItemById(): void {
+    console.log('getItemById() called');
+  }
+
+  public updateItem(): void {
+    console.log('updateItem() called');
+  }
+
+  public removeItem(): void {
+    console.log('removeItem() called');
+  }
 }
