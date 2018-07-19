@@ -20,10 +20,12 @@ import { NoDataComponent } from './no-data/no-data.component';
     CommonModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+  ],
+  providers: [
+    AuthService
   ],
   declarations: [
-    AuthService,
     HighlightBorderDirective,
     HeaderComponent,
     FooterComponent,
@@ -34,7 +36,6 @@ import { NoDataComponent } from './no-data/no-data.component';
   ],
   exports: [
     MaterialModule,
-    AuthService,
     HighlightBorderDirective,
     HeaderComponent,
     FooterComponent,
