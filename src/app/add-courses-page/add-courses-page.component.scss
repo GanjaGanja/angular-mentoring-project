@@ -1,0 +1,29 @@
+@import 'mixins';
+
+.add-course {
+  &-caption {
+    margin: 30px 0;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  &-duration-wrapper {
+    display: flex;
+  }
+
+  &-duration-info {
+    margin-left: 10px;
+  }
+
+  &-button {
+    width: 120px;
+
+    + .add-course-button {
+      margin-left: 10px;
+    }
+  }
+}

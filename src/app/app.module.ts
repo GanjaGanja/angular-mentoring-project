@@ -6,11 +6,13 @@ import { CoreModule } from './core/core.module';
 import { LoginModule } from './login/login.module';
 import { CourseListModule } from './course-list/course-list.module';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
+import { AddCoursesPageComponent } from './add-courses-page/add-courses-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesPageComponent
+    CoursesPageComponent,
+    AddCoursesPageComponent
   ],
   imports: [
     BrowserModule,

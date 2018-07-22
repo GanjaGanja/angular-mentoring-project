@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h3 class="add-course-caption">Add/Edit Course</h3>
+            <form class="add-course-form">
+                <mat-form-field>
+                    <input placeholder="Title" type="text" matInput>
+                </mat-form-field>
+                <mat-form-field>
+                    <textarea placeholder="Description" matInput></textarea>
+                </mat-form-field>
+                <mat-form-field>
+                    <input placeholder="Date" type="text" matInput>
+                </mat-form-field>
+                <div class="add-course-duration-wrapper">
+                    <mat-form-field>
+                        <input
+                            #addCourseDuration
+                            placeholder="Duration (minutes)" type="number" min="1" max="999" matInput>
+                    </mat-form-field>
+                    <p class="add-course-duration-info">{{ addCourseDuration.value }} minutes</p>
+                </div>
+                <div class="add-course-buttons">
+                    <button
+                        class="add-course-button" type="submit" mat-raised-button color="primary"
+                        (click)="handleSubmit()"
+                    >Save</button>
+                    <button
+                        class="add-course-button" type="button" mat-raised-button color="secondary"
+                        (click)="handleCancel()"
+                    >Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
