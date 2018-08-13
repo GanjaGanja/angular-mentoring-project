@@ -9,6 +9,7 @@ import { AuthService } from '../shared/services/auth/auth.service';
 import { HighlightBorderDirective } from '../shared/directives/highlight-border/highlight-border.directive';
 import { DurationPipe } from '../shared/pipes/duration/duration.pipe';
 import { OrderByPipe } from '../shared/pipes/order-by/order-by.pipe';
+import { FilterPipe } from '../shared/pipes/filter/filter.pipe';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -31,6 +32,7 @@ import { NoDataComponent } from './no-data/no-data.component';
     HighlightBorderDirective,
     DurationPipe,
     OrderByPipe,
+    FilterPipe,
     HeaderComponent,
     FooterComponent,
     BreadcrumbsComponent,
@@ -43,6 +45,7 @@ import { NoDataComponent } from './no-data/no-data.component';
     HighlightBorderDirective,
     DurationPipe,
     OrderByPipe,
+    FilterPipe,
     HeaderComponent,
     FooterComponent,
     BreadcrumbsComponent,
