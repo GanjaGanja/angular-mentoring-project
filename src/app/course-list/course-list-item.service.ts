@@ -25,7 +25,7 @@ export class CourseListItemService {
       {
         id: 2,
         title: 'Course List Item 2',
-        creationDate: '05.15.2018',
+        creationDate: '01.01.2017',
         duration: 4780,
         topRated: true,
         description: `

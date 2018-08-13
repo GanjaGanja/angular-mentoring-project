@@ -8,6 +8,7 @@ import { MaterialModule } from './../shared/material/material.module';
 import { AuthService } from '../shared/services/auth/auth.service';
 import { HighlightBorderDirective } from '../shared/directives/highlight-border/highlight-border.directive';
 import { DurationPipe } from '../shared/pipes/duration/duration.pipe';
+import { OrderByPipe } from '../shared/pipes/order-by/order-by.pipe';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -29,6 +30,7 @@ import { NoDataComponent } from './no-data/no-data.component';
   declarations: [
     HighlightBorderDirective,
     DurationPipe,
+    OrderByPipe,
     HeaderComponent,
     FooterComponent,
     BreadcrumbsComponent,
@@ -40,6 +42,7 @@ import { NoDataComponent } from './no-data/no-data.component';
     MaterialModule,
     HighlightBorderDirective,
     DurationPipe,
+    OrderByPipe,
     HeaderComponent,
     FooterComponent,
     BreadcrumbsComponent,

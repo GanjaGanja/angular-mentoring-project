@@ -1,5 +1,5 @@
 <app-course-list-item
-    *ngFor="let item of courseListItems"
+    *ngFor="let item of courseListItems | orderBy: 'duration'"
     [courseItem]="item"
     (deleteItem)="logItemId($event)"
 ></app-course-list-item>
