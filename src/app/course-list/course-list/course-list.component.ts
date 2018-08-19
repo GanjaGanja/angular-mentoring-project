@@ -18,7 +18,13 @@ export class CourseListComponent implements OnInit {
     this.courseListItems = this.courseListService.getList();
   }
 
-  public removeCourseListItemById(id: number): void {
+  private removeCourseListItemById(id: number): void {
     this.courseListService.removeItem(id);
+  }
+
+  public openConfirmWindow(id: number) {
+    if (window.confirm('Do you really want to delete this course?')) {
+      this.removeCourseListItemById(id);
+    }
   }
 }
