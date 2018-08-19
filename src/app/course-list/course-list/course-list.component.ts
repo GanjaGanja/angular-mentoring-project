@@ -18,7 +18,7 @@ export class CourseListComponent implements OnInit {
     this.courseListItems = this.courseListService.getList();
   }
 
-  public logItemId(id: number): void {
-    console.log(`Delete Course Item Id = ${id}`);
+  public removeCourseListItemById(id: number): void {
+    this.courseListService.removeItem(id);
   }
 }
