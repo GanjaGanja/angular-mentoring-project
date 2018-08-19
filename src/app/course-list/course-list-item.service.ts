@@ -13,7 +13,7 @@ export class CourseListItemService {
       {
         id: 1,
         title: 'Course List Item 1',
-        creationDate: '05.05.2018',
+        creationDate: new Date('05.05.2018'),
         duration: 3600,
         topRated: false,
         description: `
@@ -25,7 +25,7 @@ export class CourseListItemService {
       {
         id: 2,
         title: 'Course List Item 2',
-        creationDate: '01.01.2017',
+        creationDate: new Date('04.05.2018'),
         duration: 4780,
         topRated: true,
         description: `
@@ -37,7 +37,7 @@ export class CourseListItemService {
       {
         id: 3,
         title: 'Course List Item 3',
-        creationDate: '06.30.2018',
+        creationDate: new Date('06.30.2019'),
         duration: 2800,
         topRated: false,
         description: `
