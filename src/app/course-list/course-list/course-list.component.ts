@@ -15,8 +15,7 @@ export class CourseListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.courseListItems = this.courseListService.getCourseItems();
-    console.log('courseListItems populated');
+    this.courseListItems = this.courseListService.getList();
   }
 
   public logItemId(id: number): void {
