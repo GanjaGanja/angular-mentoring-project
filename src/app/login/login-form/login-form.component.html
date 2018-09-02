@@ -9,14 +9,14 @@
                             [(ngModel)]="currentUser.username"
                             name="username"
                             placeholder="Email"
-                            type="email" matInput>
+                            type="email" matInput required>
                     </mat-form-field>
                     <mat-form-field>
                         <input
                             [(ngModel)]="currentUser.password"
                             name="password"
                             placeholder="Password"
-                            type="password" matInput>
+                            type="password" matInput required>
                     </mat-form-field>
                     <button class="login-button" type="submit" mat-raised-button color="primary">Login</button>
                 </form>

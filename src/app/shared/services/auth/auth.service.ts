@@ -4,12 +4,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AuthService {
+  private userIsAuthenticated = false;
 
   constructor() { }
 
   public login(username: string, password: string): void {
     console.log('login() called: save user to local storage');
     localStorage.setItem('currentUser', JSON.stringify({ username: username, password: password }));
+    this.userIsAuthenticated = true;
   }
 
   public logout(): void {
@@ -19,7 +21,7 @@ export class AuthService {
 
   public isAuthenticated(): boolean {
     console.log('IsAuthenticated() called');
-    return true;
+    return this.userIsAuthenticated;
   }
 
   public getUserInfo(): string {

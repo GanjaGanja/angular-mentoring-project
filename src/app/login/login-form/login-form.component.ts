@@ -19,7 +19,7 @@ export class LoginFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit() {
+  public onSubmit() {
     this.authService.login(this.currentUser.username, this.currentUser.password);
   }
 
