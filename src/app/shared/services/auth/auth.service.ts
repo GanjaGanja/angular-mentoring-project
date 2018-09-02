@@ -7,12 +7,14 @@ export class AuthService {
 
   constructor() { }
 
-  public login(): void {
-    console.log('login() called');
+  public login(username: string, password: string): void {
+    console.log('login() called: save user to local storage');
+    localStorage.setItem('currentUser', JSON.stringify({ username: username, password: password }));
   }
 
   public logout(): void {
-    console.log('logout() called');
+    console.log('logout() called: remove user from local storage');
+    localStorage.removeItem('currentUser');
   }
 
   public isAuthenticated(): boolean {
@@ -20,7 +22,9 @@ export class AuthService {
     return true;
   }
 
-  public getUserInfo(): void {
-    console.log('GetUserInfo() called');
+  public getUserInfo(): string {
+    console.log('GetUserInfo() called: get username from local storage');
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    return currentUser.username;
   }
 }
