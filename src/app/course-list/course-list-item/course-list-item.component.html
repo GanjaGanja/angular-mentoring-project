@@ -12,7 +12,7 @@
                         [class.course-title--top-rated]="courseItem.topRated"
                     >{{courseItem.title | uppercase}}</h3>
                     <div class="course-info">
-                        <p class="course-info-text">{{courseItem.duration | duration}}</p>
+                        <p class="course-info-text">{{courseItem.duration | duration: 'seconds'}}</p>
                         <p class="course-info-text">{{courseItem.creationDate | date: 'MM/dd/yyyy'}}</p>
                     </div>
                 </div>

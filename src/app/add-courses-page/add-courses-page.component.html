@@ -18,7 +18,7 @@
                             #addCourseDuration
                             placeholder="Duration (minutes)" type="number" min="1" max="999" matInput>
                     </mat-form-field>
-                    <p class="add-course-duration-info">{{ addCourseDuration.value }} minutes</p>
+                    <p class="add-course-duration-info">{{ addCourseDuration.value | duration: 'minutes' }}</p>
                 </div>
                 <div class="add-course-buttons">
                     <button

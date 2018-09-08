@@ -6,11 +6,22 @@ import * as moment from 'moment';
 })
 export class DurationPipe implements PipeTransform {
 
-  transform(value: number, args?: any): string {
-    if (value >= 3600) {
-      return `${moment.utc(value * 1000).format('h')}h ${moment.utc(value * 1000).format('mm')}m`;
+  transform(value: number, format: string): string {
+    let duration: number;
+    let hour: number;
+
+    if (format === 'seconds') {
+      duration = value * 1000;
+      hour = 3600;
+    } else if (format === 'minutes') {
+      duration = value * 1000 * 60;
+      hour = 60;
+    }
+
+    if (value >= hour) {
+      return `${moment.utc(duration).format('h')}h ${moment.utc(duration).format('mm')}m`;
     } else {
-      return `${moment.utc(value * 1000).format('mm')}m`;
+      return `${moment.utc(duration).format('mm')}m`;
     }
   }
 
