@@ -1,7 +1,4 @@
 <app-header></app-header>
-<!-- TODO: fix issue: userIsAuthenticated() is called multiple times -->
 <app-breadcrumbs *ngIf="userIsAuthenticated()"></app-breadcrumbs>
-<app-login-page *ngIf="!userIsAuthenticated()"></app-login-page>
-<app-courses-page></app-courses-page>
-<app-add-courses-page></app-add-courses-page>
+<router-outlet></router-outlet>
 <app-footer></app-footer>

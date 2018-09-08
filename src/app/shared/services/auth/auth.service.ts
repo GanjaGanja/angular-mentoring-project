@@ -17,10 +17,11 @@ export class AuthService {
   public logout(): void {
     console.log('logout() called: remove user from local storage');
     localStorage.removeItem('currentUser');
+    this.userIsAuthenticated = false;
   }
 
   public isAuthenticated(): boolean {
-    console.log('IsAuthenticated() called');
+    // console.log('IsAuthenticated() called');
     return this.userIsAuthenticated;
   }
 

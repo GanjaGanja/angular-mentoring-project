@@ -20,11 +20,11 @@
             </div>
             <div class="col-3">
                 <div class="course-buttons">
-                    <button
+                    <a
+                        [routerLink]="['../courses/' + courseItem.id]"
                         class="course-button"
-                        type="button"
                         mat-button
-                        color="primary">Edit</button>
+                        color="primary">Edit</a>
                     <button
                         class="course-button"
                         type="button"

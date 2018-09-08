@@ -11,6 +11,7 @@ export class AppComponent {
   constructor(private authService: AuthService) { }
 
   public userIsAuthenticated(): boolean {
+    // TODO: fix issue: userIsAuthenticated() is called multiple times
     return this.authService.isAuthenticated();
   }
 }

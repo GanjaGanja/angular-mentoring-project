@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 
+import { ROUTES } from '../app.routes';
 import { MaterialModule } from './../shared/material/material.module';
 
 import { AuthService } from '../shared/services/auth/auth.service';
@@ -24,6 +26,7 @@ import { NoDataComponent } from './no-data/no-data.component';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
+    RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [
     AuthService
