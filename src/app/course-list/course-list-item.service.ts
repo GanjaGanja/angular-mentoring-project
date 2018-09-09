@@ -8,11 +8,10 @@ const courseItems: CourseListItem[] = [
     creationDate: new Date('05.05.2018'),
     duration: 3600,
     topRated: false,
-    description: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Proin malesuada, odio in ullamcorper congue, metus justo dictum velit, nec sollicitudin mauris urna eget purus.
-      Phasellus nulla sem, placerat venenatis scelerisque eget, scelerisque pellentesque ex. Fusce molestie sed lectus in ultrices.
-    `
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\
+     Proin malesuada, odio in ullamcorper congue, metus justo dictum velit, nec sollicitudin mauris urna eget purus.\
+     Phasellus nulla sem, placerat venenatis scelerisque eget, scelerisque pellentesque ex.\
+     Fusce molestie sed lectus in ultrices.'
   },
   {
     id: 2,
@@ -20,11 +19,10 @@ const courseItems: CourseListItem[] = [
     creationDate: new Date('04.05.2018'),
     duration: 4780,
     topRated: true,
-    description: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Proin malesuada, odio in ullamcorper congue, metus justo dictum velit, nec sollicitudin mauris urna eget purus.
-      Phasellus nulla sem, placerat venenatis scelerisque eget, scelerisque pellentesque ex. Fusce molestie sed lectus in ultrices.
-    `
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\
+     Proin malesuada, odio in ullamcorper congue, metus justo dictum velit, nec sollicitudin mauris urna eget purus.\
+     Phasellus nulla sem, placerat venenatis scelerisque eget, scelerisque pellentesque ex.\
+     Fusce molestie sed lectus in ultrices.'
   },
   {
     id: 3,
@@ -32,11 +30,10 @@ const courseItems: CourseListItem[] = [
     creationDate: new Date('06.30.2019'),
     duration: 2800,
     topRated: false,
-    description: `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Proin malesuada, odio in ullamcorper congue, metus justo dictum velit, nec sollicitudin mauris urna eget purus.
-      Phasellus nulla sem, placerat venenatis scelerisque eget, scelerisque pellentesque ex. Fusce molestie sed lectus in ultrices.
-    `
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\
+     Proin malesuada, odio in ullamcorper congue, metus justo dictum velit, nec sollicitudin mauris urna eget purus.\
+     Phasellus nulla sem, placerat venenatis scelerisque eget, scelerisque pellentesque ex.\
+     Fusce molestie sed lectus in ultrices.'
   }
 ];
 
@@ -56,6 +53,7 @@ export class CourseListItemService {
   }
 
   public createCourse(newCourseListItem: CourseListItem): void {
+    newCourseListItem.id = this.getList().length + 1;
     this.getList().push(newCourseListItem);
   }
 

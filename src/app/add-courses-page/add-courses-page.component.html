@@ -2,33 +2,33 @@
     <div class="row">
         <div class="col">
             <h3 class="add-course-caption">Add/Edit Course</h3>
-            <form class="add-course-form">
+            <form class="add-course-form" (ngSubmit)="handleSubmit()" #addCoursesForm="ngForm">
                 <mat-form-field>
-                    <input placeholder="Title" type="text" matInput>
+                    <input
+                        [(ngModel)]="courseItem.title" name="title"
+                        placeholder="Title" type="text" matInput>
                 </mat-form-field>
                 <mat-form-field>
-                    <textarea placeholder="Description" matInput></textarea>
+                    <input
+                        [(ngModel)]="courseItem.description" name="description"
+                        placeholder="Description" type="text" matInput>
                 </mat-form-field>
                 <mat-form-field>
-                    <input placeholder="Date" type="text" matInput>
+                    <input
+                        [(ngModel)]="courseItem.creationDate" name="creationDate"
+                        placeholder="Date" type="text" matInput>
                 </mat-form-field>
                 <div class="add-course-duration-wrapper">
                     <mat-form-field>
                         <input
-                            #addCourseDuration
-                            placeholder="Duration (minutes)" type="number" min="1" max="999" matInput>
+                            [(ngModel)]="courseItem.duration" name="duration" #addCourseDuration
+                            placeholder="Duration (minutes)" type="number" matInput>
                     </mat-form-field>
                     <p class="add-course-duration-info">{{ addCourseDuration.value | duration: 'minutes' }}</p>
                 </div>
                 <div class="add-course-buttons">
-                    <button
-                        class="add-course-button" type="submit" mat-raised-button color="primary"
-                        (click)="handleSubmit()"
-                    >Save</button>
-                    <button
-                        class="add-course-button" type="button" mat-raised-button color="secondary"
-                        (click)="handleCancel()"
-                    >Cancel</button>
+                    <button class="add-course-button" type="submit" mat-raised-button color="primary">Save</button>
+                    <button class="add-course-button" type="button" mat-raised-button color="secondary" (click)="handleCancel()">Cancel</button>
                 </div>
             </form>
         </div>

@@ -44,6 +44,7 @@ import { NoDataComponent } from './no-data/no-data.component';
     NoDataComponent
   ],
   exports: [
+    FormsModule,
     MaterialModule,
     HighlightBorderDirective,
     DurationPipe,
